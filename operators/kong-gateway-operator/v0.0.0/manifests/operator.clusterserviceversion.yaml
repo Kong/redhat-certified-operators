@@ -30,10 +30,14 @@ metadata:
           }
         }
       ]
+
     capabilities: Basic Install
+    categories: Networking
+    description: Kong Operator for Kubernetes
     operators.operatorframework.io/builder: operator-sdk-v1.22.0
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
-  name: operator.v0.0.1
+    repository: https://github.com/Kong/gateway-operator
+  name: kong-gateway-operator.v0.0.1
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -325,8 +329,17 @@ spec:
   links:
   - name: Operator
     url: https://operator.domain
+  - name: Github repository for the operator
+    url: https://github.com/kong/gateway-operator
+  relatedImages:
+  - image: ghcr.io/kong/gateway-operator@sha256:9a03e5ba82e875e06b23d1a7b26eab37c26b3ae7c13f5d451a6881a2122ee5bd
+    name: gateway-operator
   maturity: alpha
+  maintainers:
+  - email: support@konghq.com
+    name: Kong Inc.
   provider:
     name: Kong Inc.
     url: https://konghq.com
   version: 0.0.1
+  minKubeVersion: 1.20.0
