@@ -51,7 +51,7 @@ stages:
   #         Errors:
   #                 Owned CRDs do not have resources specified
   #         Log:
-  #                 Loaded ClusterServiceVersion: kong-gateway-operator.v0.0.1
+  #                 Loaded ClusterServiceVersion: kong-gateway-operator.v0.0.0
 
   # - entrypoint:
   #   - scorecard-test
@@ -82,7 +82,7 @@ stages:
   #                 controlPlaneDeploymentOptions does not have a spec descriptor
   #                 dataPlaneDeploymentOptions does not have a spec descriptor
   #         Log:
-  #                 Loaded ClusterServiceVersion: kong-gateway-operator.v0.0.1
+  #                 Loaded ClusterServiceVersion: kong-gateway-operator.v0.0.0
   #                 Loaded 1 Custom Resources from alm-examples
 
   # - entrypoint:

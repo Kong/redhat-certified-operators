@@ -60,7 +60,7 @@ metadata:
     operators.operatorframework.io/builder: operator-sdk-v1.22.0
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
     repository: https://github.com/Kong/gateway-operator
-  name: kong-gateway-operator.v0.0.1
+  name: kong-gateway-operator.v0.0.0
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -364,5 +364,5 @@ spec:
   provider:
     name: Kong Inc.
     url: https://konghq.com
-  version: 0.0.1
+  version: 0.0.0
   minKubeVersion: 1.20.0
