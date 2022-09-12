@@ -689,7 +689,7 @@ spec:
                   valueFrom:
                     fieldRef:
                       fieldPath: metadata.namespace
-                image: ghcr.io/kong/gateway-operator@sha256:395781c55e081db08355e9dc1a10a9dcccec74c1fb8959396f3477bf908a4bee
+                image: ghcr.io/kong/gateway-operator:2022-09-08@sha256:19e082732d9c9aa3b09a2fae68f8c7a7477450862c949977ae04c7d74b253880
                 livenessProbe:
                   httpGet:
                     path: /healthz
@@ -828,7 +828,7 @@ spec:
     - v1beta1
     containerPort: 443
     deploymentName: gateway-operator-controller-manager
-    failurePolicy: Ignore
+    # failurePolicy: Ignore
     generateName: gateway-operator-validation.konghq.com
     rules:
     - apiGroups:
